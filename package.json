@@ -1,0 +1,33 @@
+{
+  "name": "secret-scanner",
+  "version": "1.0.0",
+  "description": "A pre-commit tool that scans staged files for API keys, tokens, and credentials before they leak.",
+  "main": "src/secret-scanner.js",
+  "type": "commonjs",
+  "bin": {
+    "secret-scanner": "src/secret-scanner.js"
+  },
+  "scripts": {
+    "start": "node src/secret-scanner.js",
+    "test": "node --test test/ || echo 'no tests yet \u2014 add some in test/'",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js --roadmap",
+    "setup": "bash scripts/setup.sh"
+  },
+  "keywords": [
+    "security",
+    "secrets",
+    "pre-commit",
+    "credentials",
+    "cli"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/secret-scanner.git"
+  },
+  "author": ""
+}
